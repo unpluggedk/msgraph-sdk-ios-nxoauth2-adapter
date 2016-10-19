@@ -27,16 +27,14 @@ Pod::Spec.new do |s|
   s.subspec 'Auth' do |auth|
     auth.dependency 'MSGraphSDK-NXOAuth2Adapter/Common'
     auth.dependency 'NXOAuth2Client', '~> 1.2.8'
-    auth.dependency 'MSGraphSDK/Common'
-    auth.dependency 'MSGraphSDK/Implementations'
 
     auth.source_files = "MSGraphSDKNXOAuth2/Auth/*.{h,m}"
     auth.public_header_files = "MSGraphSDKNXOAuth2/Auth/*.h"
   end
-  
+
   s.subspec 'Extensions' do |ext|
     ext.dependency 'MSGraphSDK-NXOAuth2Adapter/Common'
-    
+
     ext.source_files = "MSGraphSDKNXOAuth2/Extensions/*.{h,m}"
     ext.public_header_files = "MSGraphSDKNXOAuth2/Extensions/*.h"
   end
